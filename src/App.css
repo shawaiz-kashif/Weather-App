@@ -1,38 +1,129 @@
-.App {
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("/public/sky.png");;
+}
+
+
+.App{
+  text-align:center;
+  margin: 50px auto 0px;
+  width: 90%;
+  max-width: 700px;
+  border-radius: 20px;
+  height: 470px;
+  padding: 20px 15px;
+  background-color: rgb(231, 229, 71);
+}
+
+.search-engine-container {
+  width: 100%;
+  max-width: 600px; /* Limit the maximum width */
+  margin: 0 auto; /* Center the container */
+  padding: 20px;
+  background-color: yellow; /* Assuming this is the yellow box */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.search-engine {
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* Adjust spacing */
+  align-items: center;
+  padding: 10px 0; /* Add padding for spacing */
+}
+
+.search-engine input {
+  flex: 1; /* Make input take available space */
+  height: 45px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px 15px; /* Adjust padding for better spacing */
+  font-size: 16px;
+  outline: none;
+  background-color: #ffffff;
+  color: #555555;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  margin-right: 10px; /* Space between input and button */
+}
+
+.search-engine input:focus {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.search-engine button {
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  color: #fff;
+  font-size: 20px;
+  outline: none;
+  cursor: pointer;
+  padding: 13px 20px; /* Adjust padding for better button size */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.search-engine button:hover {
+  background: linear-gradient(45deg, #2575fc, #6a11cb);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.search-engine button:active {
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transform: translateY(0);
+}
+
+
+
+.city-name{
+  margin-bottom: 10px;
+}
+
+.loading{
+  font-size: 60px;
+  font-weight: bolder;
+  color: #000;
+}
+
+.date{
+  font-size: 18px;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.temp{
+  font-size: 64px;
+  color: #000;
+  font-weight: bold;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.description{
+  color: #000000;
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 0px;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.weather-info{
   display: flex;
-  flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 20px;
+  padding: 0px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.column{
+  display: flex;
+  align-items: center;
+  line-height: 1px;
 }
