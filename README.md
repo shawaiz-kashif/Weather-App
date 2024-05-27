@@ -1,4 +1,5 @@
 🌦️ BreezeBuddy
+
 Welcome to BreezeBuddy, your go-to weather app for accurate and up-to-date weather information. Stay ahead of the weather with our intuitive and beautifully designed app!
 
 
